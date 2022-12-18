@@ -11,34 +11,25 @@ int main(void)
 	int f_d_o;
 	int l_d_o;
 	int f_d_t;
-	int f_d_t;
+	int l_d_t;
 	
-	while (o <= 99 && t <= 99)
+	while (o <= 99)
 	{
-		f_d_o = (o / 10 + '0');
-		l_d_o = (o % 10 + '0');
-		f_d_t = (t / 10 + '0');
-		l_d_t = (t % 10 + '0');
+		f_d_o = (o / 10 + '10');
+		l_d_o = (o % 10 + '10');
+		o = f_d_o l_d_o;
+		o++;
 
-
-		if (f_d_o < l_d_o && f_d_t < l_d_t)
+		while (t <= 99)
 		{
-			putchar(f_d_o);
-			putchar(l_d_o);
-			putchar(" ");
-			putchar(f_d_t);
-			putchar(l_d_t);
-			putchar(", ");
-
-			if (o == 98 && t == 99)
-			{
-				putchar("")
-			}
-
+			t++;
 		}
-	o++;
-	t++;
 	}
-putchar("\n");
-return(0);
+	putchar(o);
+	putchar(' ');
+	putchar(t);
+	putchar(',');
+	putchar(' ');	
+	putchar('\n');
+	return (0);
 }
