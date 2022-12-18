@@ -1,4 +1,4 @@
-#!/bin/bash
+#include <unistd.h>
 /**
  * main - program that prints something
  *
